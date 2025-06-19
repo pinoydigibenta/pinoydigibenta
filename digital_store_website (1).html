@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Products Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .hero-section {
+      background-color: #1a202c;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans">
+  <!-- Header -->
+  <header class="bg-white shadow p-4 flex justify-between items-center">
+    <div class="flex items-center space-x-3">
+      <div class="h-10 w-10 bg-blue-500 text-white flex items-center justify-center font-bold rounded-full">PD</div>
+      <h1 class="text-xl font-bold">Pinoy Digi Benta</h1>
+    </div>
+    <nav>
+      <a href="#products" class="text-blue-600 mx-2">Products</a>
+      <a href="#checkout" class="text-blue-600 mx-2">Checkout</a>
+      <a href="#contact" class="text-blue-600 mx-2">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero-section text-center py-20 text-white">
+    <div class="bg-black bg-opacity-50 p-6 inline-block rounded">
+      <h2 class="text-4xl font-bold">Affordable Digital Bundles</h2>
+      <p class="mt-2 text-lg">Pay via GCash or Maya</p>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="bg-white p-4 rounded shadow">
+      <h3 class="text-lg font-semibold">11-in-1 Bundle Course</h3>
+      <p class="text-sm text-gray-600 mt-2">Includes Video Tutorial ChatBot Automation, Virtual Assistant, Facebook Ads, Etc</p>
+      <p class="mt-2 font-bold text-green-600">₱149</p>
+      <a href="#checkout" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded">Buy Now</a>
+    </div>
+    <div class="bg-white p-4 rounded shadow">
+      <h3 class="text-lg font-semibold">CE Reviewer</h3>
+      <p class="text-sm text-gray-600 mt-2">Complete Civil Engineering Board Exam Reviewer Files</p>
+      <p class="mt-2 font-bold text-green-600">₱99</p>
+      <a href="#checkout" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded">Buy Now</a>
+    </div>
+    <div class="bg-white p-4 rounded shadow">
+      <h3 class="text-lg font-semibold">Master Plumber Reviewer</h3>
+      <p class="text-sm text-gray-600 mt-2">Reviewer Pack for Master Plumber Board Exam</p>
+      <p class="mt-2 font-bold text-green-600">₱99</p>
+      <a href="#checkout" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded">Buy Now</a>
+    </div>
+    <div class="bg-white p-4 rounded shadow">
+      <h3 class="text-lg font-semibold">Construction Files</h3>
+      <p class="text-sm text-gray-600 mt-2">Construction Templates, Contracts, and Estimating Sheets</p>
+      <p class="mt-2 font-bold text-green-600">₱149</p>
+      <a href="#checkout" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded">Buy Now</a>
+    </div>
+    <div class="bg-white p-4 rounded shadow">
+      <h3 class="text-lg font-semibold">Automated Estimator</h3>
+      <p class="text-sm text-gray-600 mt-2">Smart Excel Tool for Quantity and Cost Estimation</p>
+      <p class="mt-2 font-bold text-green-600">₱199</p>
+      <a href="#checkout" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded">Buy Now</a>
+    </div>
+  </section>
+
+  <!-- Checkout Instructions -->
+  <section id="checkout" class="p-8 bg-white mt-10">
+    <h2 class="text-2xl font-bold mb-4">Checkout & Payment</h2>
+    <p>Select your preferred payment method and send payment to the details below:</p>
+    <ul class="list-disc ml-6 mt-4 text-gray-700">
+      <li><strong>GCash:</strong> 0994-877-3177</li>
+      <li><strong>Maya:</strong> 0994-877-3177</li>
+    </ul>
+    <p class="mt-4">📩 After payment, fill out the form below:</p>
+
+    <div class="bg-yellow-100 text-yellow-700 p-4 my-4 rounded border border-yellow-300">
+      <strong>⚠️ Important:</strong> All payment receipts are manually reviewed. Fake or edited receipts will not be honored. No links will be sent until payment is confirmed.
+    </div>
+
+    <form class="bg-gray-100 p-4 rounded mt-4" action="https://formsubmit.co/pinoydigibenta@gmail.com" method="POST" enctype="multipart/form-data">
+      <label class="block mb-2">What product did you buy?</label>
+      <input type="text" name="product" class="w-full p-2 mb-4 border rounded" required>
+
+      <label class="block mb-2">Your email address</label>
+      <input type="email" name="email" class="w-full p-2 mb-4 border rounded" required>
+
+      <label class="block mb-2">Upload payment receipt (screenshot)</label>
+      <input type="file" name="payment_receipt" class="w-full p-2 mb-4 border rounded" accept="image/*" required>
+
+      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
+    </form>
+
+    <p class="mt-4">⏱️ You will receive the file link via email within 30 minutes <strong>after payment is verified</strong>.</p>
+    <p class="mt-2 text-sm italic text-gray-500">*Note: Please check your spam folder if you don't receive the email within the timeframe.</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="p-8 bg-gray-100 mt-10">
+    <h2 class="text-xl font-bold">Contact Us</h2>
+    <p class="mt-2 text-gray-700">Email: pinoydigibenta@gmail.com</p>
+    <p>Facebook: <a href="https://www.facebook.com/share/1Am62yynmn/?mibextid=wwXIfr" class="text-blue-600 underline">fb.me/Pinoydigibenta</a></p>
+  </section>
+
+  <footer class="text-center text-sm text-gray-500 py-6 mt-10">
+    &copy; 2025 PINOY DIGI BENTA. All rights reserved.
+  </footer>
+</body>
+</html>
